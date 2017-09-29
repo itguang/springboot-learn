@@ -13,10 +13,6 @@ public class HelloController {
         return "hello world..........";
     }
 
-    @RequestMapping("/say")
-    public  String say(){
-        return "say...";
-    }
 
 
 

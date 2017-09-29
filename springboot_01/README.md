@@ -180,3 +180,5 @@ public @interface SpringBootApplication {
  
  
  
+ 
+ 补充:idea系统提示中文乱码问题解决: http://blog.csdn.net/wenniuwuren/article/details/46348105
