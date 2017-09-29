@@ -8,5 +8,7 @@ public class Springboot01Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Springboot01Application.class, args);
+
+		System.out.println("springboot启动啦......");
 	}
 }

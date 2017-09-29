@@ -10,7 +10,15 @@ public class HelloController {
     @RequestMapping("/hello")
     public String hello(){
 
-        return "hello springboot";
+        return "hello world..........";
     }
+
+    @RequestMapping("/say")
+    public  String say(){
+        return "say...";
+    }
+
+
+
 
 }
