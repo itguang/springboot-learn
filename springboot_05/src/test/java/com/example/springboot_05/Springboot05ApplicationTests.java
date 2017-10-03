@@ -22,7 +22,8 @@ public class Springboot05ApplicationTests {
 	}
 
 	@Autowired
-	public UserMapper userMapper;
+	private UserMapper userMapper;
+
 	@Test
 	public void testInsert(){
 
