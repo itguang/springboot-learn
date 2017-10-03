@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.springboot_06.mapper.test1.UserMapper1">
+
+    <resultMap id="BaseRequestMap" type="com.example.springboot_06.entity.UserEntity">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="userName" property="userName" jdbcType="VARCHAR" />
+        <result column="passWord" property="passWord" jdbcType="VARCHAR" />
+        <result column="userSex" property="userSex" javaType="com.example.springboot_06.enums.UserSexEnum"/>
+        <result column="nickName" property="nickName" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        id, userName, passWord, userSex, nickName
+    </sql>
+
+    <select id="getAll" resultMap="BaseRequestMap"  >
+        SELECT
+        <include refid="Base_Column_List" />
+        FROM users
+    </select>
+
+    <select id="getOne" parameterType="java.lang.Long" resultMap="BaseRequestMap" >
+        SELECT
+        <include refid="Base_Column_List" />
+        FROM users
+        WHERE id = #{id}
+    </select>
+
+
+
+</mapper>
