@@ -35,7 +35,7 @@ spring.datasource.test2.password = root
 
    **1,创建 DataSource**
 
-   **2,创建SqlSessionFaction**
+   **2,创建SqlSessionFactory**
 
    **3,创建事物管理**
 
@@ -65,8 +65,8 @@ public class DataSource1Config {
         return DataSourceBuilder.create().build();
     }
 
-    //2,创建SqlSessionFaction
-    @Bean(name = "test1SqlSessionFactory")
+    //2,创建SqlSessionFactory
+    @Bean(name = "test1SqlSessionFactory")
     @Primary
     public SqlSessionFactory testSqlSessionFaction(@Qualifier("test1DataSource") DataSource dataSource) throws Exception {
 
@@ -124,8 +124,8 @@ public class DataSource2Config {
         return DataSourceBuilder.create().build();
     }
 
-    //2,创建SqlSessionFaction
-    @Bean(name = "test2SqlSessionFactory")
+    //2,创建SqlSessionFactory
+    @Bean(name = "test2SqlSessionFactory")
 
     public SqlSessionFactory testSqlSessionFaction(@Qualifier("test2DataSource") DataSource dataSource) throws Exception {
 
