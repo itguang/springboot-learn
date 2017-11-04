@@ -225,11 +225,19 @@ $ java -jar myapp.jar --spring.profiles.active=devlopment
 @Configuration
 @Profile("devlopment")
 public class ProfileConfigTest {
+    //...
     
 }
 ```
+意思是只有激活 devlopment 的Profile时,才会应用此配置类,如果 devlopment 对应的Profile
+没有被激活的话就会忽略此配置.
 
 **需要注意的是,application.properties 属性文件中的配置对所有的Profile都生效.**
+
+> 覆盖自动配置其实很简单,就是显示的编写那些没有SpringBoot 时你需要的Spring配置.
+Spring Boot的自动配置被设置为优先使用应用程序提供的配置,然后才轮到自己的自动配置.
+
+
 
 
 
