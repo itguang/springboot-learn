@@ -71,7 +71,11 @@ $ java -jar myapp.jar --server.port=80
 在applecation.properties 中以logging开头.
 
 在 idea中会有很好的提示
-![logging](images/s1.png)
+![](images/s1.png)
+
+
+
+
 
 
 
