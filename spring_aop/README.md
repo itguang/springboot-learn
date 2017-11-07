@@ -268,6 +268,13 @@ public class Audience3 {
 方法失败后，进行重复尝试。
 
 
+## 处理通知中的参数
+![](images/aop7.png)
+
+上图中需要关注的是切点表达式中的argus(trackNumber) 限定符. 它表示传递给 playTrack() 方法的 int类型的 参数也会传到通知中去.
+参数的名称 trackNumber也与切点方法签名中的参数相匹配.
+
+
 
   
   
