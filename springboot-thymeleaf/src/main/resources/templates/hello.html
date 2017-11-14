@@ -1,0 +1,20 @@
+<!DOCTYPE html >
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Hello Thymeleaf!</title>
+</head>
+<body>
+<p th:text="'Hello, ' + ${name} + '!'"/>
+
+
+<p th:text="${name}">默认值</p>
+
+<a th:if="${name=='yes'}" href="#"> 只有name=yes 时,你才能看到我 </a>
+<a th:unless="${name == 'yes'}" href="#" >只有name!=yes 时,你才能看到我 </a>
+
+
+<div th:include="footer::copyright"></div>
+</body>
+</html>
