@@ -1,5 +1,7 @@
 # Springboot 外置配置
 
+# Springboot 整合thymeleaf 
+
 > spring Boot 自动配置的bean提供了300多个用于微调的属性.当调整设置时,只需要在环境变量,Java系统属性,JNDI,命令行参数,属性文件进行配置 就好了.
 
 ## 举例:

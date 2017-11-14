@@ -1,4 +1,4 @@
-package com.itguang.springboot_07;
+package com.itguang.springboot_07.web;
 
 /**
  * @author itguang
