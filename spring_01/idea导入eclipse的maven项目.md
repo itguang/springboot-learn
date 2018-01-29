@@ -52,7 +52,7 @@ war explored是发布文件目录.
 
 ![](images/idea8.png)
 
-**h.最后一步: tomcat配置,选择部署的方式,这是我们在 d 步骤下配置的 Artifact 方式,选择, war exploded (如果想知道为什么可以看最后的文章链接)**,
+**h.最后一步: tomcat配置,选择部署的方式,这是我们在 d 步骤下配置的 Artifact 方式,选择, war exploded**,
 
 ![](images/idea9.png)
 
